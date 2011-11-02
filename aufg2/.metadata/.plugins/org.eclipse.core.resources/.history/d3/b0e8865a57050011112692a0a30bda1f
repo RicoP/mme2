@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" 
+			   xmlns:view="de.beuth.view.*"
+			   minWidth="955" minHeight="600"
+			   creationComplete="onCreationComplete()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import adobe.utils.CustomActions;
+			
+			import de.beuth.events.CustomEvent;
+			
+			import mx.controls.Alert;
+			import mx.logging.Log; 
+			
+			private function onCreationComplete() : void {
+				var customEvent:Event = new CustomEvent(CustomEvent.LOGIN); 
+				loginButton.dispatchEvent(customEvent); 				
+			}
+
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				Alert.show("Hallo " + username.text + "!", "Login-Versuch"); 
+			}
+			
+		]]>
+	</fx:Script>
+	<s:states> 
+		<s:State name="LogInState"/> 
+		<s:State name="LoggedInState"/>
+	</s:states>
+	<s:Panel title="MME2 - Login">		
+		<mx:Form id="loginForm">
+			<mx:FormItem>
+				<s:VGroup>
+					<s:Group >
+						<s:Label text="Willkommen im Kurs MME2. Bitte Nutzerdaten eingeben.&#xd;" textAlign="center" verticalAlign="top" left="2" top="34" right="-6" fontWeight="bold"/>
+					</s:Group>
+					<s:Group>
+						<s:HGroup >
+							<s:Group>
+								<s:Label>
+									Benutzername: 
+								</s:Label>								
+							</s:Group>
+							<s:Group>
+								<s:TextInput id="username">									
+								</s:TextInput>
+							</s:Group>
+						</s:HGroup>						
+					</s:Group>
+					<s:Group>
+						<s:HGroup >
+							<s:Group>
+								<s:Label>
+									Password: 
+								</s:Label>								
+							</s:Group>
+							<s:Group>
+								<s:TextInput id="password" displayAsPassword="true">									
+								</s:TextInput>
+							</s:Group>
+						</s:HGroup>						
+					</s:Group>
+					<s:Group>
+						<mx:Button id="loginButton" label="Einloggen">  
+						</mx:Button>
+					</s:Group>
+				</s:VGroup>
+			</mx:FormItem>
+		</mx:Form>
+	</s:Panel>
+</s:Application>

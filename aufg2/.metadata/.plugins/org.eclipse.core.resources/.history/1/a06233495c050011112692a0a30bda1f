@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"
+			   creationComplete="onCreationComplete()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert; 
+			
+			private function onCreationComplete() : void {
+				trace("Hallo"); 				
+			}
+			
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				Alert.show("Hallo " + username.text + "!", "Login-Versuch"); 
+			}
+		]]>
+	</fx:Script>
+	<fx:Metadata>
+		[Event (name="login", type="de.beuth.events.CustomEvent")]
+	</fx:Metadata>
+	<s:Panel title="MME2 - Login">		
+		<mx:Form id="loginForm">
+			<mx:FormItem>
+				<s:VGroup>
+					<s:Group >
+						<s:Label text="Willkommen im Kurs MME2. Bitte Nutzerdaten eingeben.&#xd;" textAlign="center" verticalAlign="top" left="2" top="34" right="-6" fontWeight="bold"/>
+					</s:Group>
+					<s:Group>
+						<s:HGroup >
+							<s:Group>
+								<s:Label>
+									Benutzername: 
+								</s:Label>								
+							</s:Group>
+							<s:Group>
+								<s:TextInput id="username">									
+								</s:TextInput>
+							</s:Group>
+						</s:HGroup>						
+					</s:Group>
+					<s:Group>
+						<s:HGroup >
+							<s:Group>
+								<s:Label>
+									Password: 
+								</s:Label>								
+							</s:Group>
+							<s:Group>
+								<s:TextInput id="password" displayAsPassword="true">									
+								</s:TextInput>
+							</s:Group>
+						</s:HGroup>						
+					</s:Group>
+					<s:Group>
+						<mx:Button label="Einloggen" click="button1_clickHandler(event)">  
+						</mx:Button>
+					</s:Group>
+				</s:VGroup>
+			</mx:FormItem>
+		</mx:Form>
+	</s:Panel>
+</s:Group>

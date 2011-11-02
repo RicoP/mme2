@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   xmlns:view = "de.beuth.view.*"
+			   creationComplete="application1_creationCompleteHandler(event)"
+			   minWidth="955" minHeight="600">
+	<fx:Script>
+		<![CDATA[
+			import de.beuth.events.CustomEvent;
+			
+			import mx.events.FlexEvent;
+			
+			protected function application1_creationCompleteHandler(event:FlexEvent):void
+			{
+				this.currentState = "LogInState"; 
+			}
+			
+			protected function loginpanel1_loginHandler(event:CustomEvent):void
+			{
+				this.currentState = "LoggedInState"; 
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<s:states>
+		<s:State name="LogInState" />
+		<s:State name="LoggedInState" /> 
+	</s:states>
+	
+	<view:LoginPanel includeIn="LogInState" login="loginpanel1_loginHandler(event)" />
+	<view:MainFrame includeIn="LoggedInState" /> 
+</s:Application>

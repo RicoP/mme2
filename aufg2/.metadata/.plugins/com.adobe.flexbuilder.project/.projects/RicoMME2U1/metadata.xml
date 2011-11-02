@@ -2,4 +2,7 @@
 <projectMetadata>
   <swf bgcolor="ffffff" fullPath="/RicoMME2U1/bin-debug/RicoMME2U1.swf" height="100%" pageTitle="" width="100%"/>
   <generatedHTMLResources/>
+<swf bgcolor="ffffff" fullPath="/RicoMME2U1/bin-debug/MainView.swf" height="100%" pageTitle="" width="100%"/>
+  <swf bgcolor="ffffff" fullPath="/RicoMME2U1/bin-debug/LoginPanel.swf" height="100%" pageTitle="" width="100%"/>
+  <swf bgcolor="ffffff" fullPath="/RicoMME2U1/bin-debug/Main.swf" height="100%" pageTitle="" width="100%"/>
 </projectMetadata>

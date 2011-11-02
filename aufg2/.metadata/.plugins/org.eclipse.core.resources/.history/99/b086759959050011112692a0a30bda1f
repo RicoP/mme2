@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" 
+		 xmlns:view="de.beuth.view.*"
+		 width="400" height="300" xmlns:local="*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+<fx:Metadata>
+	[Event (name="login", type="de.beuth.events.CustomEvent")]
+</fx:Metadata>
+	
+	<s:states> 
+		<s:State name="LogInState"/> 
+		<s:State name="LoggedInState"/>
+	</s:states>
+	
+<view:RicoMME2U1 id="loginPanel" login="onLogin(event)" >
+	
+</view:RicoMME2U1>
+
+	
+</s:Group>

@@ -18,6 +18,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -31,24 +32,34 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.adobe.flexbuilder.ui.StartPage" name="Web Browser" partName="Start Page" title="Start Page" tooltip="Flash Builder Start Page" workbook="DefaultEditorWorkbook">
-<input factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder Start Page" url="file:/Applications/Adobe Flash Builder 4.5/eclipse/plugins/com.adobe.flexbuilder.ui_4.5.1.313231/welcome/welcome.html?firstLaunch=false&amp;edition=prem&amp;version=451"/>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="LoginPanel.mxml" partName="LoginPanel.mxml" path="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U2/src/de/beuth/view/LoginPanel.mxml" title="LoginPanel.mxml" tooltip="RicoMME2U1/src/de/beuth/view/LoginPanel.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RicoMME2U2/src/de/beuth/view/LoginPanel.mxml"/>
 </editor>
-<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="RicoMME2U1.mxml" partName="RicoMME2U1.mxml" path="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U1/src/RicoMME2U1.mxml" title="RicoMME2U1.mxml" tooltip="RicoMME2U1/src/RicoMME2U1.mxml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RicoMME2U1/src/RicoMME2U1.mxml"/>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="CustomEvent.as" partName="CustomEvent.as" path="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U2/src/de/beuth/events/CustomEvent.as" title="CustomEvent.as" tooltip="RicoMME2U2/src/de/beuth/events/CustomEvent.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RicoMME2U2/src/de/beuth/events/CustomEvent.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="312" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MainView.mxml" partName="MainView.mxml" path="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U1/src/MainView.mxml" title="MainView.mxml" tooltip="RicoMME2U1/src/MainView.mxml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RicoMME2U1/src/MainView.mxml"/>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MainFrame.mxml" partName="MainFrame.mxml" path="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U2/src/de/beuth/view/MainFrame.mxml" title="MainFrame.mxml" tooltip="RicoMME2U1/src/de/beuth/view/MainFrame.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RicoMME2U2/src/de/beuth/view/MainFrame.mxml"/>
+</editor>
+<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Main.mxml" partName="Main.mxml" path="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U2/src/Main.mxml" title="Main.mxml" tooltip="RicoMME2U1/src/Main.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RicoMME2U2/src/Main.mxml"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<expanded>
+<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="1588"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -59,12 +70,16 @@
 <view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
 <fpeExpanded>
-<fpeElement fpePath="/RicoMME2U1"/>
-<fpeElement fpePath="/RicoMME2U1/src"/>
-<fpeElement fpePath="/RicoMME2U1/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/RicoMME2U2"/>
+<fpeElement fpePath="/RicoMME2U2/src"/>
+<fpeElement fpePath="/RicoMME2U2/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/RicoMME2U2/src/de"/>
+<fpeElement fpePath="/RicoMME2U2/src/de/beuth"/>
+<fpeElement fpePath="/RicoMME2U2/src/de/beuth/view"/>
+<fpeElement fpePath="/RicoMME2U2/src/services/categories"/>
 </fpeExpanded>
 <fpeSelection>
-<fpeElement fpePath="/RicoMME2U1/src/MainView.mxml"/>
+<fpeElement fpePath="/RicoMME2U2/src/Main.mxml"/>
 </fpeSelection>
 <filters>
 <filter element="*.class" isEnabled="false"/>
@@ -87,15 +102,17 @@
 <filter element=".model" isEnabled="true"/>
 </filters>
 <expanded>
-<element path="/RicoMME2U1"/>
+<element path="/RicoMME2U2"/>
 </expanded>
 <selection>
-<element path="/RicoMME2U1/src/MainView.mxml"/>
+<element path="/RicoMME2U2/src/Main.mxml"/>
 </selection>
 </viewState>
 </view>
 <view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" partName="Network Monitor"/>
-<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -165,12 +182,12 @@
 <perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="com.adobe.flexbuilder.packageexplorer"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
 <view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
 <view id="com.adobe.flexbuilder.as.editor.asdocviewer"/>
+<view id="com.adobe.flexbuilder.packageexplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -193,6 +210,7 @@
 <info folder="true" part="statesViewHolder" ratio="0.6494465" ratioLeft="528" ratioRight="285" relationship="2" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="com.adobe.flexbuilder.mxml.editor.states.StatesViewer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="propertiesHolder" ratio="0.2489019" ratioLeft="170" ratioRight="513" relationship="4" relative="statesViewHolder">
@@ -203,7 +221,7 @@
 </folder>
 </info>
 <info folder="true" part="bottomLayout" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="com.adobe.flexbuilder.dcrad.views.DataServicesView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
 <page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
@@ -234,16 +252,166 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" id="com.adobe.flexbuilder.ui.StartPage" style="20" tooltip="Flash Builder Start Page" url="file:/Applications/Adobe Flash Builder 4.5/eclipse/plugins/com.adobe.flexbuilder.ui_4.5.1.313231/welcome/welcome.html?firstLaunch=false&amp;edition=prem&amp;version=451"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U1/src/RicoMME2U1.mxml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U1/src/MainView.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RicoMME2U1/src/de/beuth/events/CustomEvent.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/RicoMME2U1/src/de/beuth/view/MainFrame.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U1/src/de/beuth/view/MainFrame.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U1/src/Main.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U1/src/de/beuth/view/LoginPanel.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/RicoMME2U1/src/de/beuth/view/LoginPanel.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RicoMME2U2/src/de/beuth/events/CustomEvent.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U2/src/Main.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U2/src/de/beuth/view/MainFrame.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/RicoMME2U2/src/de/beuth/view/LoginPanel.mxml"/>
 </editors>
-<item historyLabel="Start Page" index="0"/>
-<item historyLabel="RicoMME2U1.mxml" index="1">
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="CustomEvent.as" index="0">
+<position info="not_deleted" x="345" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="518" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position info="not_deleted" x="732" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position info="not_deleted" x="732" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position info="not_deleted" x="259" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="CustomEvent.as" index="0">
+<position info="not_deleted" x="312" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="4">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="5">
+<position info="not_deleted" x="554" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="5">
+<position info="not_deleted" x="219" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position info="not_deleted" x="827" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="2">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="MainFrame.mxml" index="1">
+<position/>
+</item>
+<item historyLabel="CustomEvent.as" index="6">
+<position info="not_deleted" x="312" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="MainView.mxml" index="2">
+<item historyLabel="MainFrame.mxml" index="8">
+<position/>
+</item>
+<item historyLabel="Main.mxml" index="7">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="8">
+<position/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="9">
+<position info="not_deleted" x="639" y="59"/>
+</item>
+<item historyLabel="Main.mxml" index="7">
+<position info="not_deleted" x="1051" y="13"/>
+</item>
+<item historyLabel="MainFrame.mxml" index="8">
+<position info="not_deleted" x="605" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="7">
+<position info="not_deleted" x="704" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="9">
+<position info="not_deleted" x="608" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="7">
+<position info="not_deleted" x="704" y="0"/>
+</item>
+<item historyLabel="LoginPanel.mxml" index="9">
+<position info="not_deleted" x="608" y="0"/>
+</item>
+<item active="true" historyLabel="Main.mxml" index="7">
+<position info="not_deleted" x="704" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -251,6 +419,13 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@f536e8"/>
+<trimItem IMemento.internal.id="outlineHolder"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -262,6 +437,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Main.mxml" tooltip="RicoMME2U1/src/Main.mxml">
+<persistable path="/RicoMME2U1/src/Main.mxml"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="RicoMME2U1.mxml" tooltip="/Users/ricopossienka/local/mme2/aufg2/RicoMME2U1 2/src/RicoMME2U1.mxml">
+<persistable uri="file:/Users/ricopossienka/local/mme2/aufg2/RicoMME2U1%202/src/RicoMME2U1.mxml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MainView.mxml" tooltip="RicoMME2U1/src/MainView.mxml">
 <persistable path="/RicoMME2U1/src/MainView.mxml"/>
 </file>
