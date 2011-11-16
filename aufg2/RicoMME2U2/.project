@@ -15,4 +15,16 @@
 		<nature>com.adobe.flexbuilder.project.flexnature</nature>
 		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>bin-debug</name>
+			<type>2</type>
+			<location>/Users/ricopossienka/local/htdocs/RicoMME2U2-debug</location>
+		</link>
+		<link>
+			<name>services</name>
+			<type>1</type>
+			<location>/Users/ricopossienka/local/mme2/aufg2/RicoMME2U2/1_categories.xml</location>
+		</link>
+	</linkedResources>
 </projectDescription>

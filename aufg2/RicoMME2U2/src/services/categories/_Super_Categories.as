@@ -29,7 +29,7 @@ internal class _Super_Categories extends com.adobe.fiber.services.wrapper.HTTPSe
          var argsArray:Array;
 
          operation = new mx.rpc.http.Operation(null, "getData");
-         operation.url = "/Users/ricopossienka/local/mme2/aufg2/RicoMME2U2/1_categories.xml";
+         operation.url = "1_categories.xml";
          operation.method = "GET";
          operation.serializationFilter = serializer0;
          operation.properties = new Object();

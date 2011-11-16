@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 xmlns:view="de.beuth.view.*"
+		 xmlns:local="*"
+		 xmlns:categories="services.categories.*"
+		 xmlns:videosservice="services.videosservice.*"
+		 width="580" height="476">
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.serializers.utility.TypeUtility;
+			
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+			import services.videosservice.VideosService;
+			
+			import spark.events.IndexChangeEvent;
+			
+			import valueObjects.Cat;
+			
+			protected function comboBox_creationCompleteHandler(event:FlexEvent):void
+			{
+				getDataResult.token = categories.getData();
+			}
+			
+			protected function comboBox_changeHandler(event:IndexChangeEvent):void
+			{
+				var vs : VideosService = new VideosService(); 
+				getAllVideosresult.token = vs.getVideosByCatID((comboBox.selectedItem as Cat).value);
+			}
+			
+			
+			protected function dataGrid_creationCompleteHandler(event:FlexEvent):void
+			{
+				getAllVideosResult.token = videosService.getAllVideos();
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations> 
+		<s:CallResponder id="getDataResult" />
+		<s:CallResponder id="getAllVideosresult" />
+		<categories:Categories id="categories"
+							   fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+							   showBusyCursor="true"/>
+		<s:CallResponder id="getAllVideosResult"/>
+		<videosservice:VideosService id="videosService"
+									 fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+									 showBusyCursor="true"/>
+	 
+	 
+	</fx:Declarations>
+	<s:ComboBox id="comboBox" x="10" y="10" change="comboBox_changeHandler(event)"
+				creationComplete="comboBox_creationCompleteHandler(event)" labelField="label">
+		<s:AsyncListView list="{TypeUtility.convertToCollection(getDataResult.lastResult.cat)}"/>
+	</s:ComboBox>
+	<s:VideoPlayer x="164" y="10" width="406" height="253"/>
+	<s:DataGrid id="dataGrid" x="10" y="271" width="560" height="195"
+				creationComplete="dataGrid_creationCompleteHandler(event)" requestedRowCount="4">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="id" headerText="id"></s:GridColumn>
+				<s:GridColumn dataField="title" headerText="title"></s:GridColumn>
+				<s:GridColumn dataField="path" headerText="path"></s:GridColumn>
+			</s:ArrayList>
+		</s:columns>
+		<s:typicalItem>
+			<fx:Object id="id1" path="path1" title="title1"></fx:Object>
+		</s:typicalItem>
+		<s:AsyncListView list="{getAllVideosResult.lastResult}"/>
+	</s:DataGrid>
+
+	
+		
+</s:Group>
